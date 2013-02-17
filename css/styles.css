@@ -1,0 +1,18 @@
+/*
+ * @author Brian Tomlinson <darthlukan@gmail.com>
+ * 
+ * I only needed this file for the background,
+ * everything else was fine, but I prefer greys.
+ * 
+ * Remove this file and its reference in index.html
+ * in order to use the "smoothness" theme defaults.
+ */
+
+body {
+	background: #303030;
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+

@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Art Of War Quotes</title>
+
+    <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.10.1/themes/smoothness/jquery-ui.min.css"
+    <link rel="canonical" href="https://chrome.google.com/webstore/detail/art-of-war-quotes/beelflngojkhjadenapibcpfnejoebdm"/>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.10.1/jquery-ui.min.js"></script>
+    
+    <link rel="icon" type="image/png" href="img/icon.png"/>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <script type="text/javascript" src="js/popup.js"></script>
+    
+  </head>
+  <body>
+    <div id="quotes">
+            
+      <div class="ui-widget-header" id="quotesH">
+        
+      </div>
+      
+      <br/>
+      <br/>
+      
+      <div class="ui-widget-content" id="quotesC">
+        
+      </div>
+      
+      <div class="ui-widget" id="buttons">
+	      <br/>
+	      <br/>
+	      <input class="ui-button" type="button" id="next" value="Next Quote" title="Get the next quote!" onclick="app.showQuotes()"/>
+	      <input class="ui-button" type="button" id="get" value="Install in Chrome" title="Install this extension from the Chrome Web Store!" />
+	      <br/>
+	      <br/>
+	      <br/>	
+      </div>
+      
+      <div class="ui-widget-footer" id="foot">
+        <a href="http://brianctomlinson.com">&copy; 2013, Brian Tomlinson</a>
+        <br/>
+        <br/>
+        <script src="https://apis.google.com/js/plusone.js"></script>
+        <g:plus action="share" annotation="inline" expandTo="bottom"></g:plus>
+      </div>
+      
+    </div>
+    <script type="text/javascript">
+    	$(document).ready(function () {
+    		// Execute
+    		app.showQuotes();
+    		
+    		// jQuery UI buttonset (button grouping)
+    		$('#buttons').buttonset();
+    		
+    		// $.tooltip without params provides basic tooltip. FYI.
+    		$('#buttons').tooltip({show: {effect: "fold", duration: 1000}});
+    		
+    		// If our install button is clicked, do work.
+    		$('#get').click(function () {
+	      		window.open('https://chrome.google.com/webstore/detail/art-of-war-quotes/beelflngojkhjadenapibcpfnejoebdm');
+	      	});
+    	});
+    </script>
+  </body>
+</html>
