@@ -3,7 +3,7 @@
   <head>
     <title>Art Of War Quotes</title>
 
-    <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.10.1/themes/smoothness/jquery-ui.min.css"/>
+    <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.10.1/themes/dot-luv/jquery-ui.min.css"
     <link rel="canonical" href="https://chrome.google.com/webstore/detail/art-of-war-quotes/beelflngojkhjadenapibcpfnejoebdm"/>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/ui/1.10.1/jquery-ui.min.js"></script>
@@ -19,30 +19,37 @@
       <div class="ui-widget-header" id="quotesH">
         
       </div>
-      
-      <br/>
-      <br/>
-      
+      <div class="ui-widget-content" id="block">
+          
+      </div>
       <div class="ui-widget-content" id="quotesC">
         
       </div>
-      
-      <div class="ui-widget" id="buttons">
-	      <br/>
-	      <br/>
-	      <input class="ui-button" type="button" id="next" value="Next Quote" title="Get the next quote!" onclick="app.showQuotes()"/>
-	      <input class="ui-button" type="button" id="get" value="Install in Chrome" title="Install this extension from the Chrome Web Store!" />
-	      <br/>
-	      <br/>
-	      <br/>	
+      <div class="ui-widget-content" id="block">
+          
       </div>
-      
-      <div class="ui-widget-footer" id="foot">
+      <div class="ui-widget-header" id="button-container">
+          <div class="ui-widget" id="buttons">
+            <input class="ui-button" type="button" id="next" value="Next Quote" title="Get the next quote!" onclick="app.showQuotes()"/>
+            <input class="ui-button" type="button" id="get" value="Install in Chrome" title="Install this extension from the Chrome Web Store!" />    
+          </div>
+      </div>
+      <div class="ui-widget-content" id="block">
+          
+      </div>
+      <div class="ui-widget-footer" id="footer">
         <a href="http://brianctomlinson.com">&copy; 2013, Brian Tomlinson</a>
         <br/>
         <br/>
-        <script src="https://apis.google.com/js/plusone.js"></script>
-        <g:plus action="share" annotation="inline" expandTo="bottom"></g:plus>
+        <div class="g-plusone" data-annotation="inline" data-width="300">
+        <script type="text/javascript">
+            // Google is kind enough to asynchronously load the G+ button
+            (function() {
+                var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                po.src = 'https://apis.google.com/js/plusone.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+            })();
+        </script>
       </div>
       
     </div>
